@@ -531,16 +531,6 @@ export default function App() {
 
               {/* Header Right CTA */}
               <div className="hidden md:flex items-center space-x-4">
-                {isAdmin ? (
-                  <button onClick={() => { setIsAdmin(false); sessionStorage.removeItem('isAdmin'); showToastMessage('로그아웃 되었습니다.'); }} className="text-xs font-bold text-zinc-500 hover:text-zinc-800">
-                    관리자 로그아웃
-                  </button>
-                ) : (
-                  <button onClick={() => setLoginModalOpen(true)} className="text-xs font-bold text-zinc-500 hover:text-zinc-800 flex items-center">
-                    <svg className="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-                    관리자 로그인
-                  </button>
-                )}
                 <a 
                   href="#consultation"
                   className="bg-amber-600 hover:bg-amber-500 text-zinc-950 font-extrabold px-5 py-2.5 rounded-xl transition-all duration-300 shadow-md text-xs border border-amber-700"
@@ -626,18 +616,6 @@ export default function App() {
                   >
                     상담 신청하기
                   </a>
-                </div>
-                <div className="pt-4 text-center">
-                  {isAdmin ? (
-                    <button onClick={() => { setIsAdmin(false); sessionStorage.removeItem('isAdmin'); setMobileMenuOpen(false); showToastMessage('로그아웃 되었습니다.'); }} className="text-xs font-bold text-zinc-500 hover:text-zinc-800">
-                      관리자 로그아웃
-                    </button>
-                  ) : (
-                    <button onClick={() => { setLoginModalOpen(true); setMobileMenuOpen(false); }} className="text-xs font-bold text-zinc-500 hover:text-zinc-800 flex items-center justify-center w-full">
-                      <svg className="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-                      관리자 로그인
-                    </button>
-                  )}
                 </div>
               </div>
             )}
@@ -740,7 +718,7 @@ export default function App() {
           <section id="notice" className="py-24 px-6 max-w-7xl mx-auto border-b border-zinc-200">
             <div className="flex justify-between items-end mb-12">
               <div className="space-y-4">
-                <span className="text-amber-700 font-extrabold text-xs uppercase tracking-widest bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full">NOTICE</span>
+                <span className="inline-block mb-3 text-amber-700 font-extrabold text-xs uppercase tracking-widest bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full">NOTICE</span>
                 <h2 className="text-3xl md:text-4xl font-black text-zinc-950">공지사항</h2>
               </div>
               {isAdmin && (
@@ -818,7 +796,7 @@ export default function App() {
           {/* Features Section */}
           <section id="features" className="py-24 px-6 max-w-7xl mx-auto">
             <div className="text-center space-y-4 mb-16">
-              <span className="text-amber-700 font-extrabold text-xs uppercase tracking-widest bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full">WHY APEX</span>
+              <span className="inline-block mb-3 text-amber-700 font-extrabold text-xs uppercase tracking-widest bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full">WHY APEX</span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-zinc-950 leading-tight">
                 초/중등 수학 만점을 완성하는 3대 핵심 체계
               </h2>
@@ -873,7 +851,7 @@ export default function App() {
           <section id="curriculum" className="bg-zinc-100 py-24 px-6">
             <div className="max-w-7xl mx-auto">
               <div className="text-center space-y-4 mb-16">
-                <span className="text-amber-700 font-extrabold text-xs uppercase tracking-widest bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full">CURRICULUM</span>
+                <span className="inline-block mb-3 text-amber-700 font-extrabold text-xs uppercase tracking-widest bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full">CURRICULUM</span>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-zinc-950">초/중등 전과정 수리 로드맵</h2>
                 <p className="text-zinc-750 max-w-xl mx-auto font-bold">체계적이고 탄탄한 학생 맞춤형 개념 및 심화 설계를 제공합니다.</p>
               </div>
@@ -1009,7 +987,7 @@ export default function App() {
           {/* Timetable Section */}
           <section id="timetable" className="py-24 px-6 max-w-7xl mx-auto border-t border-zinc-200">
             <div className="text-center space-y-4 mb-16">
-              <span className="text-amber-700 font-extrabold text-xs uppercase tracking-widest bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full">TIMETABLE</span>
+              <span className="inline-block mb-3 text-amber-700 font-extrabold text-xs uppercase tracking-widest bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full">TIMETABLE</span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-zinc-950">주간 시간표</h2>
               <p className="text-zinc-800 max-w-xl mx-auto font-bold leading-relaxed">
                 현재 운영 중인 반별 주간 시간표입니다. (상세 내용은 학원으로 문의 바랍니다.)
@@ -1106,7 +1084,7 @@ export default function App() {
             {/* Monthly Calendar Section */}
             <div className="mt-24">
               <div className="text-center space-y-4 mb-12">
-                <span className="text-blue-700 font-extrabold text-xs uppercase tracking-widest bg-blue-50 border border-blue-200 px-4 py-1.5 rounded-full">MONTHLY CALENDAR</span>
+                <span className="inline-block mb-3 text-blue-700 font-extrabold text-xs uppercase tracking-widest bg-blue-50 border border-blue-200 px-4 py-1.5 rounded-full">MONTHLY CALENDAR</span>
                 <h3 className="text-3xl md:text-4xl font-black text-zinc-950">월간 시간표</h3>
                 <p className="text-zinc-800 font-bold">월간 학사 일정 및 휴강일을 확인하세요.</p>
               </div>
@@ -1192,7 +1170,7 @@ export default function App() {
           {/* Teacher Section (Reconfigured to a Single, Elegant centered profile) */}
           <section id="teachers" className="py-24 px-6 max-w-7xl mx-auto">
             <div className="text-center space-y-4 mb-16">
-              <span className="text-amber-700 font-extrabold text-xs uppercase tracking-widest bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full">INSTRUCTOR</span>
+              <span className="inline-block mb-3 text-amber-700 font-extrabold text-xs uppercase tracking-widest bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full">INSTRUCTOR</span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-zinc-950">APEX 대표 원장 소개</h2>
               <p className="text-zinc-800 max-w-xl mx-auto font-bold leading-relaxed">
                 대치동 대형학원 오답 실무 분석가 출신의 대표원장이 직접 모든 재원생을 1:1 밀착 책임 지도합니다.
@@ -1234,7 +1212,7 @@ export default function App() {
           <section id="testimonials" className="bg-zinc-100 py-24 px-6">
             <div className="max-w-7xl mx-auto">
               <div className="text-center space-y-4 mb-16">
-                <span className="text-amber-700 font-extrabold text-xs uppercase tracking-widest bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full">TESTIMONIALS</span>
+                <span className="inline-block mb-3 text-amber-700 font-extrabold text-xs uppercase tracking-widest bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full">TESTIMONIALS</span>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-zinc-950">성적으로 보여주는 확실한 가치</h2>
                 <p className="text-zinc-800 max-w-xl mx-auto font-bold">학생들과 학부모님들께서 직접 체험해 보고 남기신 생생한 기록입니다.</p>
               </div>
@@ -1296,7 +1274,7 @@ export default function App() {
             {/* Contact Information & Map */}
             <div className="lg:col-span-5 space-y-8">
               <div className="space-y-4">
-                <span className="text-amber-700 font-extrabold text-xs uppercase tracking-widest bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full">CONTACT US</span>
+                <span className="inline-block mb-3 text-amber-700 font-extrabold text-xs uppercase tracking-widest bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full">CONTACT US</span>
                 <h2 className="text-3xl md:text-4xl font-black text-zinc-955">오시는 길 및 문의처</h2>
                 <p className="text-zinc-800 font-bold text-sm leading-relaxed">
                   편하신 시간에 방문 및 예약하셔서 자녀의 실력 무료 테스트 및 맞춤 공부 비법을 상담받아 보세요.
@@ -1562,11 +1540,11 @@ export default function App() {
               {/* Branding */}
               <div className="md:col-span-5 space-y-6">
                 <a href="#" className="flex items-center space-x-3 text-white">
-                  <div className="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center font-bold text-lg shadow-lg">
+                  <div className="w-10 h-10 rounded-xl bg-black text-white flex items-center justify-center font-bold text-lg shadow-lg border border-zinc-800">
                     Σ
                   </div>
                   <span className="font-display font-black text-3xl tracking-wider text-white">
-                    APEX <span className="text-amber-500 font-sans font-extrabold text-xl ml-1">수학학원</span>
+                    APEX <span className="text-white font-sans font-extrabold text-xl ml-1">수학학원</span>
                   </span>
                 </a>
                 <p className="text-xs text-zinc-400 font-bold leading-relaxed max-w-sm">
