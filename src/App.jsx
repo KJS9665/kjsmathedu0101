@@ -1107,7 +1107,7 @@ export default function App() {
             <div className="mt-24">
               <div className="text-center space-y-4 mb-12">
                 <span className="text-blue-700 font-extrabold text-xs uppercase tracking-widest bg-blue-50 border border-blue-200 px-4 py-1.5 rounded-full">MONTHLY CALENDAR</span>
-                <h3 className="text-2xl md:text-3xl font-black text-zinc-950">월간 시간표</h3>
+                <h3 className="text-3xl md:text-4xl font-black text-zinc-950">월간 시간표</h3>
                 <p className="text-zinc-800 font-bold">월간 학사 일정 및 휴강일을 확인하세요.</p>
               </div>
 
@@ -1561,12 +1561,12 @@ export default function App() {
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
               {/* Branding */}
               <div className="md:col-span-5 space-y-6">
-                <a href="#" className="flex items-center space-x-2.5 text-white">
-                  <div className="w-8 h-8 rounded-lg bg-white text-zinc-955 flex items-center justify-center font-bold text-base shadow">
+                <a href="#" className="flex items-center space-x-3 text-white">
+                  <div className="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center font-bold text-lg shadow-lg">
                     Σ
                   </div>
-                  <span className="font-display font-extrabold text-xl tracking-wider">
-                    APEX <span className="text-amber-500 font-sans font-bold text-sm ml-0.5">수학학원</span>
+                  <span className="font-display font-black text-3xl tracking-wider text-white">
+                    APEX <span className="text-amber-500 font-sans font-extrabold text-xl ml-1">수학학원</span>
                   </span>
                 </a>
                 <p className="text-xs text-zinc-400 font-bold leading-relaxed max-w-sm">
@@ -1597,16 +1597,16 @@ export default function App() {
                   APEX 수학학원은 등원 및 하원 시 쪽지시험 결과, 참여도를 자동으로 문자로 발송하고 있습니다.
                 </p>
                 <div className="flex items-center space-x-3 pt-2">
-                  <div className="w-8 h-8 rounded-full bg-zinc-900 flex items-center justify-center text-zinc-400 hover:text-white transition-colors cursor-pointer border border-zinc-800">
-                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z" />
-                    </svg>
-                  </div>
-                  <div className="w-8 h-8 rounded-full bg-zinc-900 flex items-center justify-center text-zinc-400 hover:text-white transition-colors cursor-pointer border border-zinc-800">
-                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z" />
-                    </svg>
-                  </div>
+                  {isAdmin ? (
+                    <button onClick={async () => { await signOut(auth); showToastMessage('로그아웃 되었습니다.'); }} className="text-sm font-bold text-amber-500 hover:text-amber-400 flex items-center transition-colors">
+                      관리자 로그아웃
+                    </button>
+                  ) : (
+                    <button onClick={() => setLoginModalOpen(true)} className="text-sm font-bold text-zinc-400 hover:text-white flex items-center transition-colors">
+                      <svg className="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                      관리자 로그인
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
