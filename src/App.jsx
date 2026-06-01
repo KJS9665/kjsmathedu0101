@@ -104,7 +104,9 @@ export default function App() {
             // Load Notices
             const noticesSnap = await getDocs(collection(db, 'notices'));
             if (!noticesSnap.empty) {
-              setNotices(noticesSnap.docs.map(doc => ({ id: doc.id, ...doc.data() })));
+              const fetchedNotices = noticesSnap.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+              fetchedNotices.sort((a, b) => new Date(b.date) - new Date(a.date));
+              setNotices(fetchedNotices);
             } else {
               setNotices([
                 { id: 'default1', title: 'APEX 수학학원 홈페이지가 오픈되었습니다.', content: '환영합니다.', date: '2026-05-25', file: null, fileName: '' }
@@ -133,18 +135,32 @@ export default function App() {
             calendarSnap.forEach(doc => {
               if (doc.id === 'monthly') setMonthlyCalendar(doc.data().data || {});
             });
-
-            // Load Consultations
-            const consultSnap = await getDocs(collection(db, 'consultations'));
-            if (!consultSnap.empty) {
-              setConsultationRequests(consultSnap.docs.map(doc => ({ id: doc.id, ...doc.data() })));
-            }
           } catch (e) {
-            console.error('Error fetching data from Firestore:', e);
+            console.error('Error fetching initial data from Firestore:', e);
           }
         };
         fetchData();
       }, []);
+
+      useEffect(() => {
+        const fetchConsultations = async () => {
+          if (!isAdmin) return;
+          try {
+            const consultSnap = await getDocs(collection(db, 'consultations'));
+            if (!consultSnap.empty) {
+              const reqs = consultSnap.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+              // Sort newest first based on parseable date if possible
+              reqs.reverse();
+              setConsultationRequests(reqs);
+            } else {
+              setConsultationRequests([]);
+            }
+          } catch (e) {
+            console.error('Error fetching consultations:', e);
+          }
+        };
+        fetchConsultations();
+      }, [isAdmin]);
 
       const [formData, setFormData] = useState({
         studentName: '',
@@ -651,11 +667,11 @@ export default function App() {
                 <span>초/중등 전문 수학 - 계양구 효성동 최상위 수리 교육관</span>
               </div>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight text-white">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight text-white break-keep">
                 생각의 <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500">차이</span>가<br className="sm:hidden" /> 수학의 <span className="underline decoration-amber-500 decoration-8 underline-offset-8">등급</span>을 만듭니다.
               </h1>
 
-              <p className="text-lg md:text-xl text-zinc-200 max-w-2xl mx-auto font-bold leading-relaxed">
+              <p className="text-lg md:text-xl text-zinc-200 max-w-2xl mx-auto font-bold leading-relaxed break-keep">
                 단순 암기식 연산과 주입식 교육은 중학교 심화 과정부터 무너집니다. 
                 APEX 수학학원은 철저한 개념 유도와 1:1 오답 클리닉으로 스스로 답을 내는 진짜 해결력을 키웁니다.
               </p>
@@ -1144,10 +1160,10 @@ export default function App() {
                     
                     if (status === 'class') {
                       bgColorClass = 'bg-blue-50/50';
-                      label = <span className="block mt-2 text-[11px] font-bold text-blue-700 bg-blue-100/50 border border-blue-200 px-1 py-0.5 rounded text-center">수업 예정</span>;
+                      label = <span className="block mt-2 text-sm font-bold text-blue-700 bg-blue-100/50 border border-blue-200 px-1 py-0.5 rounded text-center">수업 예정</span>;
                     } else if (status === 'holiday') {
                       bgColorClass = 'bg-red-50/50';
-                      label = <span className="block mt-2 text-[11px] font-bold text-red-700 bg-red-100/50 border border-red-200 px-1 py-0.5 rounded text-center">휴강</span>;
+                      label = <span className="block mt-2 text-sm font-bold text-red-700 bg-red-100/50 border border-red-200 px-1 py-0.5 rounded text-center">휴강</span>;
                     }
 
                     return (
