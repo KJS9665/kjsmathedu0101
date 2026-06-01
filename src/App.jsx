@@ -513,20 +513,20 @@ export default function App() {
                 <div className="w-10 h-10 rounded-xl bg-zinc-900 flex items-center justify-center text-white font-bold text-xl border border-zinc-700 shadow-lg">
                   Σ
                 </div>
-                <span className="font-display font-extrabold text-2xl tracking-wider text-zinc-955">
+                <span className="font-display font-extrabold text-2xl tracking-wider text-zinc-950">
                   APEX <span className="text-amber-600 font-sans font-bold text-lg ml-0.5">MATH</span>
                 </span>
               </a>
 
               {/* Navigation Desktop */}
               <nav className="hidden md:flex items-center space-x-9">
-                <a href="#notice" className="text-zinc-650 hover:text-zinc-955 font-extrabold text-sm transition-colors">공지사항</a>
-                <a href="#features" className="text-zinc-650 hover:text-zinc-955 font-extrabold text-sm transition-colors">학원 강점</a>
-                <a href="#curriculum" className="text-zinc-650 hover:text-zinc-955 font-extrabold text-sm transition-colors">커리큘럼</a>
-                <a href="#timetable" className="text-zinc-650 hover:text-zinc-955 font-extrabold text-sm transition-colors">주간 시간표</a>
-                <a href="#teachers" className="text-zinc-650 hover:text-zinc-955 font-extrabold text-sm transition-colors">원장 소개</a>
-                <a href="#testimonials" className="text-zinc-650 hover:text-zinc-955 font-extrabold text-sm transition-colors">성공 후기</a>
-                <a href="#consultation" className="text-zinc-650 hover:text-zinc-955 font-extrabold text-sm transition-colors">오시는 길</a>
+                <a href="#notice" className="text-zinc-650 hover:text-zinc-950 font-extrabold text-sm transition-colors">공지사항</a>
+                <a href="#features" className="text-zinc-650 hover:text-zinc-950 font-extrabold text-sm transition-colors">학원 강점</a>
+                <a href="#curriculum" className="text-zinc-650 hover:text-zinc-950 font-extrabold text-sm transition-colors">커리큘럼</a>
+                <a href="#timetable" className="text-zinc-650 hover:text-zinc-950 font-extrabold text-sm transition-colors">주간 시간표</a>
+                <a href="#teachers" className="text-zinc-650 hover:text-zinc-950 font-extrabold text-sm transition-colors">원장 소개</a>
+                <a href="#testimonials" className="text-zinc-650 hover:text-zinc-950 font-extrabold text-sm transition-colors">성공 후기</a>
+                <a href="#consultation" className="text-zinc-650 hover:text-zinc-950 font-extrabold text-sm transition-colors">오시는 길</a>
               </nav>
 
               {/* Header Right CTA */}
@@ -612,7 +612,7 @@ export default function App() {
                   <a 
                     href="#consultation"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="block bg-amber-600 text-zinc-955 text-center font-extrabold py-3 rounded-xl text-sm border border-amber-700"
+                    className="block bg-amber-600 text-zinc-950 text-center font-extrabold py-3 rounded-xl text-sm border border-amber-700"
                   >
                     상담 신청하기
                   </a>
@@ -633,7 +633,7 @@ export default function App() {
                   e.target.style.display = 'none';
                 }}
               />
-              <div className="absolute inset-0 bg-gradient-to-b from-zinc-955/95 via-zinc-955/90 to-zinc-955"></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/95 via-zinc-950/90 to-zinc-950"></div>
               {/* Glowing gradients */}
               <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-600/10 rounded-full blur-[140px] pointer-events-none"></div>
               <div className="absolute bottom-10 right-1/4 w-[450px] h-[450px] bg-amber-500/10 rounded-full blur-[160px] pointer-events-none"></div>
@@ -1275,7 +1275,7 @@ export default function App() {
             <div className="lg:col-span-5 space-y-8">
               <div className="space-y-4">
                 <span className="inline-block mb-3 text-amber-700 font-extrabold text-xs uppercase tracking-widest bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full">CONTACT US</span>
-                <h2 className="text-3xl md:text-4xl font-black text-zinc-955">오시는 길 및 문의처</h2>
+                <h2 className="text-3xl md:text-4xl font-black text-zinc-950">오시는 길 및 문의처</h2>
                 <p className="text-zinc-800 font-bold text-sm leading-relaxed">
                   편하신 시간에 방문 및 예약하셔서 자녀의 실력 무료 테스트 및 맞춤 공부 비법을 상담받아 보세요.
                 </p>
@@ -1290,7 +1290,7 @@ export default function App() {
                     </svg>
                   </div>
                   <div>
-                    <strong className="text-zinc-955 block font-black mb-0.5">학원 주소</strong>
+                    <strong className="text-zinc-950 block font-black mb-0.5">학원 주소</strong>
                     <span className="text-zinc-900 block">인천 계양구 효서로363번길 4-1 2층</span>
                   </div>
                 </div>
@@ -1302,7 +1302,7 @@ export default function App() {
                     </svg>
                   </div>
                   <div>
-                    <strong className="text-zinc-955 block font-black mb-0.5">대표 유선 상담 번호</strong>
+                    <strong className="text-zinc-950 block font-black mb-0.5">대표 유선 상담 번호</strong>
                     <span className="text-amber-750 font-black text-lg font-display tracking-tight">032-555-7890</span>
                     <span className="text-zinc-505 block text-xs mt-0.5 font-bold">(전화 상담 가능 시간: 평일 오후 1시 ~ 10시)</span>
                   </div>
@@ -1315,7 +1315,7 @@ export default function App() {
                     </svg>
                   </div>
                   <div>
-                    <strong className="text-zinc-955 block font-black mb-0.5">학원 수업 시간</strong>
+                    <strong className="text-zinc-950 block font-black mb-0.5">학원 수업 시간</strong>
                     <span className="text-zinc-900 block">평일: 오후 2시 ~ 10시 | 주말: 오전 10시 ~ 오후 5시</span>
                   </div>
                 </div>
@@ -1352,7 +1352,7 @@ export default function App() {
               {isAdmin ? (
                 <div className="flex-1 flex flex-col">
                   <div className="flex justify-between items-center mb-6">
-                    <h3 className="text-2xl font-black text-zinc-955">상담 신청 내역 조회</h3>
+                    <h3 className="text-2xl font-black text-zinc-950">상담 신청 내역 조회</h3>
                     <span className="text-xs font-bold bg-amber-100 text-amber-800 px-3 py-1 rounded-full border border-amber-200">
                       총 {consultationRequests.length}건
                     </span>
@@ -1429,7 +1429,7 @@ export default function App() {
               ) : (
                 <form onSubmit={handleFormSubmit} className="space-y-6 flex-1 flex flex-col">
                   <div className="space-y-2 mb-2">
-                    <h3 className="text-2xl font-black text-zinc-955">무료 실력 진단 및 학습 컨설팅 신청</h3>
+                    <h3 className="text-2xl font-black text-zinc-950">무료 실력 진단 및 학습 컨설팅 신청</h3>
                     <p className="text-zinc-800 text-xs font-bold">
                       필수 입력 요소(*)를 기재해 주시면, 맞춤 대입 솔루션을 위한 방문 일정을 조율해 드립니다.
                     </p>
@@ -1515,11 +1515,11 @@ export default function App() {
                   <button 
                     type="submit" 
                     disabled={isSubmitting}
-                    className="w-full mt-6 bg-amber-600 hover:bg-amber-500 text-zinc-955 font-black py-4 rounded-xl shadow-md transition-colors flex items-center justify-center space-x-2 text-base border border-amber-700"
+                    className="w-full mt-6 bg-amber-600 hover:bg-amber-500 text-zinc-950 font-black py-4 rounded-xl shadow-md transition-colors flex items-center justify-center space-x-2 text-base border border-amber-700"
                   >
                     {isSubmitting ? (
                       <React.Fragment>
-                        <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-zinc-955" fill="none" viewBox="0 0 24 24">
+                        <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-zinc-950" fill="none" viewBox="0 0 24 24">
                           <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                           <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                         </svg>
@@ -1535,7 +1535,7 @@ export default function App() {
           </section>
 
           {/* Footer Section */}
-          <footer className="bg-zinc-955 border-t border-zinc-900 text-zinc-300 py-16 px-6 mt-auto">
+          <footer className="bg-white border-t border-zinc-200 text-zinc-600 py-16 px-6 mt-auto">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
               {/* Branding */}
               <div className="md:col-span-5 space-y-6">
@@ -1543,11 +1543,11 @@ export default function App() {
                   <div className="w-10 h-10 rounded-xl bg-black text-white flex items-center justify-center font-bold text-lg shadow-lg border border-zinc-800">
                     Σ
                   </div>
-                  <span className="font-display font-black text-3xl tracking-wider text-white">
-                    APEX <span className="text-white font-sans font-extrabold text-xl ml-1">수학학원</span>
+                  <span className="font-display font-black text-3xl tracking-wider text-zinc-900">
+                    APEX <span className="text-amber-600 font-sans font-extrabold text-xl ml-1">수학학원</span>
                   </span>
                 </a>
-                <p className="text-xs text-zinc-400 font-bold leading-relaxed max-w-sm">
+                <p className="text-xs text-zinc-500 font-bold leading-relaxed max-w-sm">
                   (주)에이펙스교육그룹 | 대표자: 강재신 원장<br />
                   주소: 인천 계양구 효서로363번길 4-1 2층<br />
                   사업자등록번호: 120-00-56789 | 학원등록번호: 계양 제2048호
@@ -1559,7 +1559,7 @@ export default function App() {
 
               {/* Quick links */}
               <div className="md:col-span-3 space-y-4">
-                <h5 className="text-white font-bold text-sm">바로가기</h5>
+                <h5 className="text-zinc-900 font-bold text-sm">바로가기</h5>
                 <ul className="text-xs space-y-2.5 font-bold">
                   <li><a href="#features" className="hover:text-amber-500 transition-colors">학원 소개 및 강점</a></li>
                   <li><a href="#curriculum" className="hover:text-amber-500 transition-colors">학년별 커리큘럼</a></li>
@@ -1570,7 +1570,7 @@ export default function App() {
 
               {/* Consultation notice */}
               <div className="md:col-span-4 space-y-4">
-                <h5 className="text-white font-bold text-sm">안심 귀가 안심 출결 알림</h5>
+                <h5 className="text-zinc-900 font-bold text-sm">안심 귀가 안심 출결 알림</h5>
                 <p className="text-xs text-zinc-400 leading-relaxed font-bold">
                   APEX 수학학원은 등원 및 하원 시 쪽지시험 결과, 참여도를 자동으로 문자로 발송하고 있습니다.
                 </p>
@@ -1580,7 +1580,7 @@ export default function App() {
                       관리자 로그아웃
                     </button>
                   ) : (
-                    <button onClick={() => setLoginModalOpen(true)} className="text-sm font-bold text-zinc-400 hover:text-white flex items-center transition-colors">
+                    <button onClick={() => setLoginModalOpen(true)} className="text-sm font-bold text-zinc-600 hover:text-zinc-900 flex items-center transition-colors">
                       <svg className="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
                       관리자 로그인
                     </button>
@@ -1595,7 +1595,7 @@ export default function App() {
             <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
               <div 
                 onClick={() => setSelectedCurriculumDetail(null)}
-                className="absolute inset-0 bg-zinc-955/80 backdrop-blur-sm"
+                className="absolute inset-0 bg-zinc-950/80 backdrop-blur-sm"
               ></div>
               <div className="relative w-full max-w-lg bg-zinc-900 border border-zinc-800 rounded-3xl p-8 shadow-2xl space-y-6">
                 <button 
@@ -1618,7 +1618,7 @@ export default function App() {
                 </div>
                 <div className="space-y-4 py-2 border-t border-zinc-850 text-sm text-zinc-300 leading-relaxed font-bold">
                   <p>{selectedCurriculumDetail.desc}</p>
-                  <div className="bg-zinc-955 border border-zinc-850 p-4 rounded-xl text-xs text-zinc-300 space-y-2">
+                  <div className="bg-zinc-950 border border-zinc-850 p-4 rounded-xl text-xs text-zinc-300 space-y-2">
                     <strong className="text-white font-bold block mb-1">학습 단원 로드맵:</strong>
                     {selectedCurriculumDetail.details}
                   </div>
@@ -1647,7 +1647,7 @@ export default function App() {
             <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
               <div 
                 onClick={() => setConsultationModalOpen(false)}
-                className="absolute inset-0 bg-zinc-955/80 backdrop-blur-sm"
+                className="absolute inset-0 bg-zinc-950/80 backdrop-blur-sm"
               ></div>
               <div className="relative w-full max-w-md bg-zinc-900 border border-zinc-800 rounded-3xl p-8 shadow-2xl space-y-6">
                 <button 
@@ -1716,7 +1716,7 @@ export default function App() {
             <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
               <div 
                 onClick={() => setLoginModalOpen(false)}
-                className="absolute inset-0 bg-zinc-955/80 backdrop-blur-sm"
+                className="absolute inset-0 bg-zinc-950/80 backdrop-blur-sm"
               ></div>
               <div className="relative w-full max-w-sm bg-zinc-900 border border-zinc-800 rounded-3xl p-8 shadow-2xl space-y-6">
                 <button 
@@ -1771,7 +1771,7 @@ export default function App() {
             <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
               <div 
                 onClick={() => setNoticeWriteModalOpen(false)}
-                className="absolute inset-0 bg-zinc-955/80 backdrop-blur-sm"
+                className="absolute inset-0 bg-zinc-950/80 backdrop-blur-sm"
               ></div>
               <div className="relative w-full max-w-2xl bg-white rounded-3xl p-8 shadow-2xl space-y-6">
                 <button 
