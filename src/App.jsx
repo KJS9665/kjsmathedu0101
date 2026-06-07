@@ -642,16 +642,17 @@ export default function App() {
             <div className="max-w-4xl mx-auto text-center relative z-10 w-full space-y-8">
               <div className="inline-flex items-center space-x-2 bg-zinc-900 border border-zinc-800 rounded-full px-5 py-2 text-amber-400 font-extrabold text-xs tracking-wider shadow-inner">
                 <span>■</span>
-                <span>초/중등 전문 수학 - 계양구 효성동 최상위 수리 교육관</span>
+                <span>원장이 직접 모든 학생을 1:1 관리하는 수학 교습소</span>
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight text-white break-keep">
-                생각의 <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500">차이</span>가<br className="sm:hidden" /> 수학의 <span className="underline decoration-amber-500 decoration-8 underline-offset-8">등급</span>을 만듭니다.
+                수학을 못하는 이유는<br />공부를 안 해서가 아니라<br />
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500">어디서 막히는지</span> 모르기 때문입니다.
               </h1>
 
               <p className="text-lg md:text-xl text-zinc-200 max-w-2xl mx-auto font-bold leading-relaxed break-keep">
-                단순 암기식 연산과 주입식 교육은 중학교 심화 과정부터 무너집니다. 
-                APEX 수학학원은 철저한 개념 유도와 1:1 오답 클리닉으로 스스로 답을 내는 진짜 해결력을 키웁니다.
+                APEX는 학생별 오답을 치밀하게 분석하여<br className="hidden sm:block" />
+                개념 이해부터 실제 학교 시험 점수까지 확실하게 연결합니다.
               </p>
 
               {/* Hero CTAs */}
@@ -673,43 +674,43 @@ export default function App() {
               {/* Hero Badges */}
               <div className="grid grid-cols-3 gap-6 pt-12 border-t border-zinc-850 max-w-lg mx-auto">
                 <div>
-                  <div className="text-amber-400 text-3xl font-black font-display">A등급 68%</div>
-                  <div className="text-zinc-200 text-xs font-bold mt-1.5">내신 우수 등급 도달</div>
+                  <div className="text-amber-400 text-3xl font-black font-display">100%</div>
+                  <div className="text-zinc-200 text-xs font-bold mt-1.5">원장 직강 밀착 관리</div>
                 </div>
                 <div>
-                  <div className="text-amber-400 text-3xl font-black font-display">1:1 밀착</div>
-                  <div className="text-zinc-200 text-xs font-bold mt-1.5">개별 오답 매칭 클리닉</div>
+                  <div className="text-amber-400 text-3xl font-black font-display">매일</div>
+                  <div className="text-zinc-200 text-xs font-bold mt-1.5">학습 리포트 발송</div>
                 </div>
                 <div>
-                  <div className="text-amber-400 text-3xl font-black font-display">100% 전송</div>
-                  <div className="text-zinc-200 text-xs font-bold mt-1.5">학습 현황 즉시 보고</div>
+                  <div className="text-amber-400 text-3xl font-black font-display">1:1</div>
+                  <div className="text-zinc-200 text-xs font-bold mt-1.5">개인별 오답 DB 구축</div>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* Stats Section */}
+          {/* Core Promises Section */}
           <section className="bg-zinc-900 py-16 px-6 border-y border-zinc-850">
             <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div className="space-y-2">
-                <div className="text-zinc-300 text-sm font-bold">대표원장 직강</div>
-                <div className="text-4xl md:text-5xl font-black text-white font-display">대치동<span className="text-amber-400 text-2xl font-sans font-medium">출신</span></div>
-                <div className="text-xs text-zinc-300">오답 실무 분석가 대표원장 직강</div>
+                <div className="text-zinc-300 text-sm font-bold">책임지는 교육</div>
+                <div className="text-3xl md:text-4xl font-black text-white font-display break-keep">모든 학생 <span className="text-amber-400 font-sans font-medium">직접 관리</span></div>
+                <div className="text-xs text-zinc-300">강사 교체 없이 원장이 직접 수업합니다</div>
               </div>
-              <div className="space-y-2 border-l border-zinc-800">
-                <div className="text-zinc-300 text-sm font-bold">내신 만점 & A등급 비율</div>
-                <div className="text-4xl md:text-5xl font-black text-white font-display">68<span className="text-amber-400 text-2xl font-sans font-medium">%</span></div>
-                <div className="text-xs text-zinc-300">효성동/작전동 주요 중학교 재원생 기준</div>
+              <div className="space-y-2 md:border-l border-zinc-800">
+                <div className="text-zinc-300 text-sm font-bold">학부모 안심 소통</div>
+                <div className="text-3xl md:text-4xl font-black text-white font-display break-keep">수업 후 <span className="text-amber-400 font-sans font-medium">리포트 제공</span></div>
+                <div className="text-xs text-zinc-300">당일 학습 내용과 취약점을 카톡 전송합니다</div>
               </div>
-              <div className="space-y-2 border-l border-zinc-800">
-                <div className="text-zinc-300 text-sm font-bold">누적 수강생 수</div>
-                <div className="text-4xl md:text-5xl font-black text-white font-display">1,850<span className="text-amber-400 text-2xl font-sans font-medium">명+</span></div>
-                <div className="text-xs text-zinc-300">초/중등 개설 이후 누적 집계</div>
+              <div className="space-y-2 border-zinc-800 md:border-l mt-4 md:mt-0 pt-4 md:pt-0 border-t md:border-t-0">
+                <div className="text-zinc-300 text-sm font-bold">취약점 완벽 보완</div>
+                <div className="text-3xl md:text-4xl font-black text-white font-display break-keep">개인별 <span className="text-amber-400 font-sans font-medium">오답 데이터</span></div>
+                <div className="text-xs text-zinc-300">틀린 이유를 분석하고 유사 문제를 제공합니다</div>
               </div>
-              <div className="space-y-2 border-l border-zinc-800">
-                <div className="text-zinc-300 text-sm font-bold">오답 분석 클리닉</div>
-                <div className="text-4xl md:text-5xl font-black text-white font-display">32만<span className="text-amber-400 text-2xl font-sans font-medium">건+</span></div>
-                <div className="text-xs text-zinc-300">자체 오답 분석 데이터 DB</div>
+              <div className="space-y-2 border-l border-zinc-800 mt-4 md:mt-0 pt-4 md:pt-0 border-t md:border-t-0">
+                <div className="text-zinc-300 text-sm font-bold">언제든 묻고 답하기</div>
+                <div className="text-3xl md:text-4xl font-black text-white font-display break-keep">실시간 <span className="text-amber-400 font-sans font-medium">질의응답</span></div>
+                <div className="text-xs text-zinc-300">젊은 원장과 언제든 편하게 소통합니다</div>
               </div>
             </div>
           </section>
@@ -1167,13 +1168,13 @@ export default function App() {
             </div>
           </section>
 
-          {/* Teacher Section (Reconfigured to a Single, Elegant centered profile) */}
+          {/* Teacher Section */}
           <section id="teachers" className="py-24 px-6 max-w-7xl mx-auto">
             <div className="text-center space-y-4 mb-16">
               <span className="inline-block mb-3 text-amber-700 font-extrabold text-xs uppercase tracking-widest bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full">INSTRUCTOR</span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-zinc-950">APEX 대표 원장 소개</h2>
-              <p className="text-zinc-800 max-w-xl mx-auto font-bold leading-relaxed">
-                대치동 대형학원 오답 실무 분석가 출신의 대표원장이 직접 모든 재원생을 1:1 밀착 책임 지도합니다.
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-zinc-950 break-keep">학부모님, 안녕하세요.<br className="sm:hidden" /> 강재신 원장입니다.</h2>
+              <p className="text-zinc-800 max-w-xl mx-auto font-bold leading-relaxed break-keep">
+                성적보다 먼저 스스로 공부하는 습관을 만들어주는 멘토가 되겠습니다.
               </p>
             </div>
 
@@ -1188,20 +1189,20 @@ export default function App() {
                 <div className="space-y-6 text-center md:text-left flex-1">
                   <div>
                     <h4 className="text-2xl font-black text-zinc-900">강재신 대표원장</h4>
-                    <p className="text-sm text-amber-700 font-bold mt-1.5 leading-relaxed">
-                      건국대학교 전기전자공학부 졸업 | 前 대치동 대형학원 총 조교장
+                    <p className="text-sm text-amber-700 font-bold mt-1.5 leading-relaxed break-keep">
+                      학생 한 명 한 명을 직접 가르치고 매일 리포트를 전송합니다
                     </p>
                   </div>
                   
-                  <p className="text-zinc-700 text-sm leading-relaxed font-bold border-l-4 border-amber-500 pl-4 text-left">
-                    "수학 공부의 핵심은 본인이 어느 단계에서 막히는지 정확히 아는 것입니다. 대치동 대형학원에서 수천 명의 오답 유형과 취약 요소를 직접 분석했던 실무 경험을 바탕으로, 우리 학생들의 아주 사소한 계산 실수부터 심화 킬러 문제 해결력까지 1:1로 정확하게 짚어내겠습니다."
+                  <p className="text-zinc-700 text-sm leading-relaxed font-bold border-l-4 border-amber-500 pl-4 text-left break-keep">
+                    "저 역시 학창 시절 수학을 어려워했던 경험이 있습니다. 그래서 우리 아이들이 어느 부분에서 왜 막히는지 누구보다 잘 압니다. 억지로 시키는 공부가 아니라, 매일 학생의 취약점을 분석하고 학부모님과 투명하게 소통하며 진짜 실력을 키워가겠습니다."
                   </p>
                   
                   <div className="pt-4 border-t border-zinc-150 flex flex-wrap justify-center md:justify-start gap-2.5 text-xs text-zinc-500 font-extrabold font-mono">
-                    <span>#대치동오답분석가</span>
-                    <span>#철저한밀착피드백</span>
-                    <span>#내신A등급달성</span>
-                    <span>#원리개념정복</span>
+                    <span>#매일학습리포트</span>
+                    <span>#원장직강밀착관리</span>
+                    <span>#젊은감각소통</span>
+                    <span>#공부습관형성</span>
                   </div>
                 </div>
               </div>
