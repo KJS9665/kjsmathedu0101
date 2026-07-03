@@ -109,7 +109,7 @@ export default function App() {
               setNotices(fetchedNotices);
             } else {
               setNotices([
-                { id: 'default1', title: 'APEX 수학학원 홈페이지가 오픈되었습니다.', content: '환영합니다.', date: '2026-05-25', file: null, fileName: '' }
+                { id: 'default1', title: '독獨하게 푸는 수학 교습소 홈페이지가 오픈되었습니다.', content: '환영합니다.', date: '2026-05-25', file: null, fileName: '' }
               ]);
             }
 
@@ -514,7 +514,7 @@ export default function App() {
                   Σ
                 </div>
                 <span className="font-display font-extrabold text-2xl tracking-wider text-zinc-950">
-                  APEX <span className="text-amber-600 font-sans font-bold text-lg ml-0.5">MATH</span>
+                  독獨하게 푸는 수학 교습소 <span className="text-amber-600 font-sans font-bold text-lg ml-0.5">MATH</span>
                 </span>
               </a>
 
@@ -651,7 +651,7 @@ export default function App() {
               </h1>
 
               <p className="text-lg md:text-xl text-zinc-200 max-w-2xl mx-auto font-bold leading-relaxed break-keep">
-                APEX는 학생별 오답을 치밀하게 분석하여<br className="hidden sm:block" />
+                독獨하게 푸는 수학 교습소는 학생별 오답을 치밀하게 분석하여<br className="hidden sm:block" />
                 개념 이해부터 실제 학교 시험 점수까지 확실하게 연결합니다.
               </p>
 
@@ -797,7 +797,7 @@ export default function App() {
           {/* Features Section */}
           <section id="features" className="py-24 px-6 max-w-7xl mx-auto">
             <div className="text-center space-y-4 mb-16">
-              <span className="inline-block mb-3 text-amber-700 font-extrabold text-xs uppercase tracking-widest bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full">WHY APEX</span>
+              <span className="inline-block mb-3 text-amber-700 font-extrabold text-xs uppercase tracking-widest bg-amber-50 border border-amber-200 px-4 py-1.5 rounded-full">학원 특징</span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-zinc-950 leading-tight">
                 초/중등 수학 만점을 완성하는 3대 핵심 체계
               </h2>
@@ -1292,7 +1292,7 @@ export default function App() {
                   </div>
                   <div>
                     <strong className="text-zinc-950 block font-black mb-0.5">학원 주소</strong>
-                    <span className="text-zinc-900 block">인천 계양구 효서로363번길 4-1 2층</span>
+                    <span className="text-zinc-900 block">서울 구로구 개봉로2길 133-29 3층(개봉동)</span>
                   </div>
                 </div>
 
@@ -1303,9 +1303,9 @@ export default function App() {
                     </svg>
                   </div>
                   <div>
-                    <strong className="text-zinc-950 block font-black mb-0.5">대표 유선 상담 번호</strong>
-                    <span className="text-amber-750 font-black text-lg font-display tracking-tight">032-555-7890</span>
-                    <span className="text-zinc-505 block text-xs mt-0.5 font-bold">(전화 상담 가능 시간: 평일 오후 1시 ~ 10시)</span>
+                    <strong className="text-zinc-950 block font-black mb-0.5">상담 문의</strong>
+                    <span className="text-amber-750 font-black text-lg font-display tracking-tight">010-2573-9744</span>
+                    <span className="text-zinc-505 block text-xs mt-0.5 font-bold">내선: 02-2613-0101 (상담: 평일 오후 1시 ~ 10시)</span>
                   </div>
                 </div>
 
@@ -1541,20 +1541,18 @@ export default function App() {
               {/* Branding */}
               <div className="md:col-span-5 space-y-6">
                 <a href="#" className="flex items-center space-x-3 text-white">
-                  <div className="w-10 h-10 rounded-xl bg-black text-white flex items-center justify-center font-bold text-lg shadow-lg border border-zinc-800">
-                    Σ
-                  </div>
-                  <span className="font-display font-black text-3xl tracking-wider text-zinc-900">
-                    APEX <span className="text-amber-600 font-sans font-extrabold text-xl ml-1">수학학원</span>
+                  <span className="font-display font-black text-3xl tracking-wider text-rose-600 flex items-end">
+                    독獨하게 <span className="text-zinc-500 font-sans font-extrabold text-xl mx-1">푸는</span> 수학
+                    <span className="text-blue-700 font-sans font-bold text-sm ml-1 mb-1">교습소</span>
                   </span>
                 </a>
                 <p className="text-xs text-zinc-500 font-bold leading-relaxed max-w-sm">
-                  (주)에이펙스교육그룹 | 대표자: 강재신 원장<br />
-                  주소: 인천 계양구 효서로363번길 4-1 2층<br />
+                  독獨하게 푸는 수학 교습소 | 대표자: 강재신 원장<br />
+                  주소: 서울 구로구 개봉로2길 133-29 3층(개봉동)<br />
                   사업자등록번호: 120-00-56789 | 학원등록번호: 계양 제2048호
                 </p>
                 <div className="text-xs text-zinc-500 font-bold">
-                  &copy; 2026 APEX Math Academy. All rights reserved.
+                  &copy; 2026 독獨하게 푸는 수학 교습소. All rights reserved.
                 </div>
               </div>
 
@@ -1573,7 +1571,7 @@ export default function App() {
               <div className="md:col-span-4 space-y-4">
                 <h5 className="text-zinc-900 font-bold text-sm">안심 귀가 안심 출결 알림</h5>
                 <p className="text-xs text-zinc-400 leading-relaxed font-bold">
-                  APEX 수학학원은 등원 및 하원 시 쪽지시험 결과, 참여도를 자동으로 문자로 발송하고 있습니다.
+                  독獨하게 푸는 수학 교습소는 등원 및 하원 시 쪽지시험 결과, 참여도를 자동으로 문자로 발송하고 있습니다.
                 </p>
                 <div className="flex items-center space-x-3 pt-2">
                   {isAdmin ? (
@@ -1662,7 +1660,7 @@ export default function App() {
                 <div className="text-center space-y-2">
                   <h3 className="text-2xl font-black text-white">무료 청강 신청</h3>
                   <p className="text-zinc-300 text-xs font-light">
-                    실제 APEX 수학학원 원장 직강 수업을 1회 무료 예약 참관하여 학원만의 집중 클리닉을 확인해 보세요.
+                    실제 독獨하게 푸는 수학 교습소 원장 직강 수업을 1회 무료 예약 참관하여 학원만의 집중 클리닉을 확인해 보세요.
                   </p>
                 </div>
                 
