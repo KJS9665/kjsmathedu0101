@@ -1306,6 +1306,9 @@ export default function App() {
                     <strong className="text-zinc-950 block font-black mb-0.5">상담 문의</strong>
                     <span className="text-amber-750 font-black text-lg font-display tracking-tight">010-2573-9744</span>
                     <span className="text-zinc-505 block text-xs mt-0.5 font-bold">내선: 02-2613-0101 (상담: 평일 오후 1시 ~ 10시)</span>
+                    <span className="text-rose-600 block text-xs mt-1.5 font-bold tracking-tight bg-rose-50 border border-rose-100 px-2 py-1.5 rounded-lg">
+                      ※ 수업 중에는 전화 연결이 어려울 수 있습니다. 문자를 남겨주시면 순차적으로 연락드리겠습니다.
+                    </span>
                   </div>
                 </div>
 
@@ -1325,7 +1328,7 @@ export default function App() {
               {/* Embedded Map */}
               <div className="h-[280px] w-full border border-zinc-200 rounded-3xl overflow-hidden relative shadow-sm">
                 <iframe 
-                  src="https://maps.google.com/maps?q=인천%20계양구%20효서로363번길%204-1&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                  src="https://maps.google.com/maps?q=서울%20구로구%20개봉로2길%20133-29&t=&z=16&ie=UTF8&iwloc=&output=embed" 
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }} 
@@ -1334,7 +1337,7 @@ export default function App() {
                 ></iframe>
                 <div className="absolute bottom-4 right-4 z-10">
                   <a 
-                    href="https://map.naver.com/v5/search/인천%20계양구%20효서로363번길%204-1%202층"
+                    href="https://map.naver.com/v5/search/서울%20구로구%20개봉로2길%20133-29%203층"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-[#03C75A] hover:bg-[#02b34f] text-white text-xs font-black px-4 py-2.5 rounded-xl shadow-md flex items-center space-x-1.5 transition-colors border border-green-600"
@@ -1541,8 +1544,8 @@ export default function App() {
               {/* Branding */}
               <div className="md:col-span-5 space-y-6">
                 <a href="#" className="flex items-center space-x-3 text-white">
-                  <span className="font-display font-black text-3xl tracking-wider text-rose-600 flex items-end">
-                    독獨하게 <span className="text-zinc-500 font-sans font-extrabold text-xl mx-1">푸는</span> 수학
+                  <span className="font-display font-black text-3xl tracking-wider text-zinc-900 flex items-end">
+                    독하게 <span className="text-zinc-500 font-sans font-extrabold text-xl mx-1">푸는</span> 수학
                     <span className="text-blue-700 font-sans font-bold text-sm ml-1 mb-1">교습소</span>
                   </span>
                 </a>
