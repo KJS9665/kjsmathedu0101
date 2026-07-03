@@ -1225,13 +1225,13 @@ export default function App() {
                   <div className="flex items-center space-x-2 mb-4">
                     <span className="text-amber-500 text-sm">★★★★★</span>
                   </div>
-                  <h4 className="text-base font-bold text-zinc-900 mb-2">"기초 부족 상태에서 중등 수학 100점 달성"</h4>
+                  <h4 className="text-base font-bold text-zinc-900 mb-2">"확률과 통계의 벽을 넘어, 중등 내신 100점 달성"</h4>
                   <p className="text-zinc-700 text-xs leading-relaxed font-semibold">
-                    초등학교 6학년 분수 연산도 제대로 정리가 안 되어 있었는데, 입학 후 개별 맞춤 진도 관리와 백지 진단 오답 치료를 거쳐 중3 졸업 전 마지막 수학 내신에서 드디어 100점을 쟁취했습니다.
+                    초등학교 6학년 때부터 확률과 통계 영역에 유독 어려움을 겪었습니다. 하지만 선생님의 개별 맞춤 진도 관리와 사고력 정리 훈련을 꾸준히 한 결과, 중학교 내신에서 드디어 100점을 쟁취했습니다! 100점 받은 시험지를 들고 집에 와서는 부모님보다 선생님께 가장 먼저 자랑하고 싶어할 정도로 수학에 대한 자신감이 생겼습니다.
                   </p>
                   <div className="mt-6 pt-4 border-t border-zinc-100 flex justify-between items-center text-xs">
-                    <span className="text-zinc-900 font-extrabold">오민석 학생</span>
-                    <span className="text-zinc-500 font-bold">작전중학교 3학년</span>
+                    <span className="text-zinc-900 font-extrabold">이O온 학생</span>
+                    <span className="text-zinc-500 font-bold">광남중학교 2학년</span>
                   </div>
                 </div>
 
@@ -1241,13 +1241,13 @@ export default function App() {
                   <div className="flex items-center space-x-2 mb-4">
                     <span className="text-amber-500 text-sm">★★★★★</span>
                   </div>
-                  <h4 className="text-base font-bold text-zinc-900 mb-2">"중등 서술형 문항 감점의 완벽한 예방"</h4>
+                  <h4 className="text-base font-bold text-zinc-900 mb-2">"기초부터 선행까지 빈틈없이 연결하는 맞춤 수업"</h4>
                   <p className="text-zinc-700 text-xs leading-relaxed font-semibold">
-                    풀이 과정 식 쓰기가 전혀 안 되어 항상 서술형 부분 감점이 누적되어 항상 아깝게 2등급에 머물렀는데, 매 주간 식 정리 백지 서술 훈련을 거치며 효성동 지역 중학교 전교 1등을 달성했습니다.
+                    평소 워낙 활기가 넘치는 아이다 보니 걱정이 많았는데, 선생님과 수업할 때만큼은 얌전하게 집중하는 모습을 보고 깜짝 놀랐습니다. 선행 진도를 나가는 중에도 아이가 어려워하는 기색을 보이면 즉시 기초가 되는 초등 수학을 자연스럽게 연계해주십니다. 완벽히 이해하고 넘어가니 스스로도 자신감이 생겼다며 제게 자랑을 할 정도입니다.
                   </p>
                   <div className="mt-6 pt-4 border-t border-zinc-100 flex justify-between items-center text-xs">
-                    <span className="text-zinc-900 font-extrabold">이서연 학생 어머니</span>
-                    <span className="text-zinc-500 font-bold">효성중학교 2학년</span>
+                    <span className="text-zinc-900 font-extrabold">이O찬 학생 어머니</span>
+                    <span className="text-zinc-500 font-bold">양진초등학교 4학년</span>
                   </div>
                 </div>
 
@@ -1257,13 +1257,13 @@ export default function App() {
                   <div className="flex items-center space-x-2 mb-4">
                     <span className="text-amber-500 text-sm">★★★★★</span>
                   </div>
-                  <h4 className="text-base font-bold text-zinc-900 mb-2">"매일 전송되는 소통 레포트에 대만족"</h4>
+                  <h4 className="text-base font-bold text-zinc-900 mb-2">"수학 포기를 막아준 진심 어린 동기부여와 멘토링"</h4>
                   <p className="text-zinc-700 text-xs leading-relaxed font-semibold">
-                    매 수업 종료 후 자녀의 당일 학습 현황과 실전 기출 성적이 전송되니 집에서도 안심하고 교육 과정을 지켜볼 수 있었습니다. 억지로 가는 학원이 아니라 스스로 수학의 흥미를 되찾았네요.
+                    사춘기에 접어들며 조금만 힘들거나 불편한 과정이 생기면 회피하려 해서 걱정이 이만저만이 아니었습니다. 하지만 선생님께서 '원하는 꿈에 다가가려면 수학은 포기해선 안 된다'며 지속적으로 동기를 부여해주셨습니다. '선생님이 끝까지 도와주겠다'는 진심 어린 말씀 덕분에 아이가 굳게 믿고 공부했고, 무사히 원하던 고등학교에 진학하게 되어 진심으로 감사드립니다.
                   </p>
                   <div className="mt-6 pt-4 border-t border-zinc-100 flex justify-between items-center text-xs">
-                    <span className="text-zinc-900 font-extrabold">김태준 학부모님</span>
-                    <span className="text-zinc-500 font-bold">작전현대중학교 1학년</span>
+                    <span className="text-zinc-900 font-extrabold">김O성 학생 어머니</span>
+                    <span className="text-zinc-500 font-bold">한울중학교 3학년</span>
                   </div>
                 </div>
               </div>
