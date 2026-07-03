@@ -1227,7 +1227,7 @@ export default function App() {
                   </div>
                   <h4 className="text-base font-bold text-zinc-900 mb-2">"확률과 통계의 벽을 넘어, 중등 내신 100점 달성"</h4>
                   <p className="text-zinc-700 text-xs leading-relaxed font-semibold">
-                    초등학교 6학년 때부터 확률과 통계 영역에 유독 어려움을 겪었습니다. 하지만 선생님의 개별 맞춤 진도 관리와 사고력 정리 훈련을 꾸준히 한 결과, 중학교 내신에서 드디어 100점을 쟁취했습니다! 100점 받은 시험지를 들고 집에 와서는 부모님보다 선생님께 가장 먼저 자랑하고 싶어할 정도로 수학에 대한 자신감이 생겼습니다.
+                    초등학교 6학년부터 확률과 통계에 어려움이 있었으나 개별 맞춤 진도 관리와 사고력 정리를 통해 중학교 내신에서 드디어 100점을 쟁취했습니다. 100점 받은 시험지를 들고 집에 와서는 선생님께 가장 먼저 자랑하고 싶어 했습니다.
                   </p>
                   <div className="mt-6 pt-4 border-t border-zinc-100 flex justify-between items-center text-xs">
                     <span className="text-zinc-900 font-extrabold">이O온 학생</span>
@@ -1243,7 +1243,7 @@ export default function App() {
                   </div>
                   <h4 className="text-base font-bold text-zinc-900 mb-2">"기초부터 선행까지 빈틈없이 연결하는 맞춤 수업"</h4>
                   <p className="text-zinc-700 text-xs leading-relaxed font-semibold">
-                    평소 워낙 활기가 넘치는 아이다 보니 걱정이 많았는데, 선생님과 수업할 때만큼은 얌전하게 집중하는 모습을 보고 깜짝 놀랐습니다. 선행 진도를 나가는 중에도 아이가 어려워하는 기색을 보이면 즉시 기초가 되는 초등 수학을 자연스럽게 연계해주십니다. 완벽히 이해하고 넘어가니 스스로도 자신감이 생겼다며 제게 자랑을 할 정도입니다.
+                    활기가 넘치는 남학생이지만 선생님과 수업할 때는 얌전하게 집중하는 모습을 보고 깜짝 놀랐습니다. 선행을 가르치시면서 아이가 어려워하는 부분에 대해 즉시 기초가 되는 초등 수학을 연계하여 이해도를 높이니 스스로 자신감이 생겼다고 자랑할 정도입니다.
                   </p>
                   <div className="mt-6 pt-4 border-t border-zinc-100 flex justify-between items-center text-xs">
                     <span className="text-zinc-900 font-extrabold">이O찬 학생 어머니</span>
@@ -1259,7 +1259,7 @@ export default function App() {
                   </div>
                   <h4 className="text-base font-bold text-zinc-900 mb-2">"수학 포기를 막아준 진심 어린 동기부여와 멘토링"</h4>
                   <p className="text-zinc-700 text-xs leading-relaxed font-semibold">
-                    사춘기에 접어들며 조금만 힘들거나 불편한 과정이 생기면 회피하려 해서 걱정이 이만저만이 아니었습니다. 하지만 선생님께서 '원하는 꿈에 다가가려면 수학은 포기해선 안 된다'며 지속적으로 동기를 부여해주셨습니다. '선생님이 끝까지 도와주겠다'는 진심 어린 말씀 덕분에 아이가 굳게 믿고 공부했고, 무사히 원하던 고등학교에 진학하게 되어 진심으로 감사드립니다.
+                    점점 사춘기로 접어들면서 자신이 불편하거나 힘든 것은 하기 싫어해서 걱정이 많았습니다. 선생님께서 원하는 꿈에 다가가기 위해 수학은 절대 포기하면 안 되고 힘들지만 견뎌내면 큰 결과로 되돌아올 것이라는 지속적인 동기부여를 제공하면서 선생님이 도와주겠다는 말씀 덕분에 우리 아이가 믿고 공부한 것 같아요. 덕분에 원하는 고등학교 진학을 하여 선생님께 진심으로 감사드립니다.
                   </p>
                   <div className="mt-6 pt-4 border-t border-zinc-100 flex justify-between items-center text-xs">
                     <span className="text-zinc-900 font-extrabold">김O성 학생 어머니</span>
