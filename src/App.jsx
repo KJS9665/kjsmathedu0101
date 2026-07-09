@@ -1552,7 +1552,7 @@ export default function App() {
                 <p className="text-xs text-zinc-500 font-bold leading-relaxed max-w-sm">
                   독獨하게 푸는 수학 교습소 | 대표자: 강재신 원장<br />
                   주소: 서울 구로구 개봉로2길 133-29 3층(개봉동)<br />
-                  사업자등록번호: 120-00-56789 | 학원등록번호: 계양 제2048호
+                  사업자등록번호: 711-90-02375
                 </p>
                 <div className="text-xs text-zinc-500 font-bold">
                   &copy; 2026 독獨하게 푸는 수학 교습소. All rights reserved.
