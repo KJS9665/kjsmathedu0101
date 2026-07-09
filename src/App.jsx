@@ -1572,9 +1572,9 @@ export default function App() {
 
               {/* Consultation notice */}
               <div className="md:col-span-4 space-y-4">
-                <h5 className="text-zinc-900 font-bold text-sm">안심 귀가 안심 출결 알림</h5>
+                <h5 className="text-zinc-900 font-bold text-sm">안심 출결 알림</h5>
                 <p className="text-xs text-zinc-400 leading-relaxed font-bold">
-                  독獨하게 푸는 수학 교습소는 등원 및 하원 시 쪽지시험 결과, 참여도를 자동으로 문자로 발송하고 있습니다.
+                  독獨하게 푸는 수학 교습소는 등원 시 쪽지시험 결과와 참여도를 자동으로 문자로 발송하고 있습니다.
                 </p>
                 <div className="flex items-center space-x-3 pt-2">
                   {isAdmin ? (
